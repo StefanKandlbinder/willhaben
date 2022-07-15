@@ -5,12 +5,12 @@ exports.handler = async (event, context) => {
   let browser = null;
   console.log("spawning chrome headless");
   console.log(await chromium.executablePath());
-  console.log(process.env);
+  // console.log(process.env);
 
   try {
     browser = await chromium.launch({
       headless: true, // Show the browser.
-      executablePath: '/opt/build/repo/node_modules/chromium/lib/chromium/chrome-linux/chrome',
+      // executablePath: '/opt/build/repo/node_modules/chromium/lib/chromium/chrome-linux/chrome',
     });
     console.log(chromium.executablePath());
     const page = await browser.newPage();
