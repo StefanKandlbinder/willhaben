@@ -20,8 +20,6 @@
   },
   "homepage": "https://github.com/StefanKandlbinder/willhaben#readme",
   "dependencies": {
-    "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.12",
     "chrome-aws-lambda": "^10.1.0",
     "netlify-plugin-chromium": "^1.1.4",
     "playwright": "^1.23.3",

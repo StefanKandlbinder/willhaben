@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
   try {
     browser = await chromium.launch({
       headless: true, // Show the browser.
-      // executablePath: '/opt/build/repo/node_modules/chromium/lib/chromium/chrome-linux/chrome',
+      executablePath: '/opt/build/repo/node_modules/chromium/lib/chromium/chrome-linux/chrome',
     });
     console.log(chromium.executablePath());
     const page = await browser.newPage();
