@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 exports.handler = async (event, context) => {
   const url = 'https://www.willhaben.at/iad/immobilien/mietwohnungen/oberoesterreich/linz'
   try {
-    const { data } = await request(url)
+    const { data } = await request(url, {responseType: 'document'})
     const $ = cheerio.load(data)
     /* queryDOM */
     const resultTitle = $('##result-list-title')
