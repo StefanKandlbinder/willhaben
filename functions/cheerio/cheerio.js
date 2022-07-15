@@ -4,11 +4,11 @@ const cheerio = require('cheerio')
 exports.handler = async (event, context) => {
   const url = 'https://www.willhaben.at/iad/immobilien/mietwohnungen/oberoesterreich/linz'
   try {
-    const { data } = await request(url, {responseType: 'document'})
-    const $ = cheerio.load(data)
+    const { data } = await request(url, { responseType: 'document' })
+    // const $ = cheerio.load(data)
     /* queryDOM */
-    const resultTitle = $('##result-list-title')
-    console.log('result title', resultTitle)
+    // const resultTitle = $('#result-list-title')
+    // console.log('result title', resultTitle)
     /* const itemsText = items.map((i, el) => {
       return $(el).text().trim()
     })

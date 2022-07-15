@@ -1,0 +1,32 @@
+{
+  "name": "willhaben",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "site/index.html",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanKandlbinder/willhaben.git"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "-",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StefanKandlbinder/willhaben/issues"
+  },
+  "homepage": "https://github.com/StefanKandlbinder/willhaben#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "chrome-aws-lambda": "^10.1.0",
+    "playwright": "^1.23.3",
+    "puppeteer-core": "^10.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.23.3"
+  }
+}
