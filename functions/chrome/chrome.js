@@ -24,11 +24,12 @@ exports.handler = async (event, context) => {
       waitUntil: ['domcontentloaded', 'networkidle0']
     })
 
-    await page.waitForSelector('#result-list-title')
+    // await page.waitForSelector('#result-list-title')
 
-    theTitle = await page.title()
+    // theTitle = await page.title()
 
-    console.log('done on page', theTitle)
+    // console.log('done on page', theTitle)
+    console.log('done on page')
   } catch (error) {
     console.log('error', error)
     return {
