@@ -17,14 +17,14 @@ exports.handler = async (event, context) => {
 
     // Do stuff with headless chrome
     const page = await browser.newPage()
-    const targetUrl = 'https://davidwells.io'
+    const targetUrl = 'https://www.willhaben.at/iad/immobilien/mietwohnungen/oberoesterreich/linz'
 
     // Goto page and then do stuff
     await page.goto(targetUrl, {
       waitUntil: ['domcontentloaded', 'networkidle0']
     })
 
-    await page.waitForSelector('#phenomic')
+    await page.waitForSelector('#result-list-title')
 
     theTitle = await page.title()
 
