@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
   try {
     browser = await chromium.launch({
         headless: true, // Show the browser. 
-        executablePath: '/opt/buildhome/.cache/ms-playwright/chromium-1012'
+        executablePath: '../opt/buildhome/.cache/ms-playwright/chromium-1012'
     });
     const page = await browser.newPage();
     await page.goto("https://www.willhaben.at/iad/immobilien/mietwohnungen/oberoesterreich/linz");
