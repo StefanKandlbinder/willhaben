@@ -1,3 +1,10 @@
 [build]
   publish = "site"
   functions = "functions"
+
+[[plugins]]
+  package = "netlify-plugin-chromium"
+    inputs:
+        packageManager: yarn
+        setChromePathInEnv: false
+        failBuildOnError: true
