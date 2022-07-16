@@ -2,3 +2,7 @@
   publish = "site"
   command = "npm run build"
   functions = "functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["chrome-aws-lambda", "lambdafs", "playwright-core"]
