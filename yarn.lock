@@ -796,13 +796,6 @@ jszip@^3.6.0:
     readable-stream "~2.3.6"
     setimmediate "^1.0.5"
 
-lambdafs@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/lambdafs/-/lambdafs-1.3.0.tgz"
-  integrity sha512-HqRPmEgtkTW4sCYDUjTEuTGkjCHuLvtZU8iM8GkhD7SpjW4AJJbBk86YU4K43sWGuW5Vmzp1lVCx4ab/kJsuBw==
-  dependencies:
-    tar-fs "^2.0.0"
-
 lambdafs@^2.0.3:
   version "2.1.1"
   resolved "https://registry.npmjs.org/lambdafs/-/lambdafs-2.1.1.tgz"
@@ -932,13 +925,6 @@ pkg-dir@4.2.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
-
-playwright-aws-lambda@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.npmjs.org/playwright-aws-lambda/-/playwright-aws-lambda-0.8.0.tgz"
-  integrity sha512-AtvtsN4WymjKwAviR9PdFS1RirmQNRr8F0HqURNvcK4sbwzzx4Nc5Jmnq7oZkAgVMcnfT+ETHpkqRTGYXkxiHw==
-  dependencies:
-    lambdafs "^1.3.0"
 
 playwright-core@1.23.3, playwright-core@^1.23.3:
   version "1.23.3"
@@ -1115,7 +1101,7 @@ tar-fs@2.0.0:
     pump "^3.0.0"
     tar-stream "^2.0.0"
 
-tar-fs@^2.0.0, tar-fs@^2.1.1:
+tar-fs@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/tar-fs/-/tar-fs-2.1.1.tgz"
   integrity sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==
