@@ -6,13 +6,11 @@ exports.handler = async (event, context) => {
   let browser = null
   console.log('spawning chrome headless')
   try {
-    const executablePath = await chromium.executablePath
-
     // setup
     browser = await puppeteer.launch({
       args: chromium.args,
-      executablePath: executablePath,
-      headless: chromium.headless,
+      executablePath: process.env.EXCECUTABLE_PATH || await chromium.executablePath,
+      headless: true
     })
 
     // Do stuff with headless chrome

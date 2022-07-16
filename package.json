@@ -5,7 +5,7 @@
   "main": "site/index.html",
   "scripts": {
     "start": "",
-    "build": "npx playwright install chromium",
+    "build": "",
     "docs": "md-magic --path '**/*.md' --ignore 'node_modules'"
   },
   "repository": {
@@ -29,7 +29,7 @@
     "playwright": "^1.23.3",
     "playwright-aws-lambda": "^0.8.0",
     "playwright-core": "^1.23.3",
-    "puppeteer-core": "^10.1.0"
+    "puppeteer-core": "^10.4.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.23.3"
