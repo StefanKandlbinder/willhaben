@@ -1,10 +1,4 @@
 [build]
   publish = "site"
   functions = "functions"
-
-[[plugins]]
-  package = "netlify-plugin-chromium"
-    [plugins-inputs]
-        packageManager =  "yarn"
-        setChromePathInEnv = false
-        failBuildOnError =  true
+  command = "npm run prebuild"

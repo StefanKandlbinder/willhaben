@@ -4,7 +4,13 @@
   "description": "-",
   "main": "site/index.html",
   "scripts": {
-    "test": "-"
+    "start": "",
+    "prezip": "rm -rf functions-build && mkdir functions-build",
+    "zip": "cd functions/chrome && npm install && chmod -R 777 node_modules && zip -r chrome.zip *",
+    "postzip": "mv functions/chrome/chrome.zip functions-build",
+    "prebuild": "npm run zip",
+    "build": "",
+    "docs": "md-magic --path '**/*.md' --ignore 'node_modules'"
   },
   "repository": {
     "type": "git",
@@ -21,6 +27,8 @@
   "homepage": "https://github.com/StefanKandlbinder/willhaben#readme",
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
+    "dotenv": "^16.0.1",
+    "firebase": "^9.9.0",
     "netlify-plugin-chromium": "^1.1.4",
     "playwright": "^1.23.3",
     "playwright-aws-lambda": "^0.8.0",
