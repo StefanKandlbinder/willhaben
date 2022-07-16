@@ -102,7 +102,8 @@ exports.handler = async (event, context) => {
     const executablePath = await chromium.executablePath()
     browser = await chromium.launch({
       headless: true, // Hide the browser.
-      executablePath: executablePath,
+      // executablePath: executablePath,
+      executablePath: '/opt/build/repo/node_modules/chromium/lib/chromium/chrome-linux/chrome',
     });
 
     Promise.allSettled(
