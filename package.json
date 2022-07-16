@@ -23,15 +23,14 @@
   "homepage": "https://github.com/StefanKandlbinder/willhaben#readme",
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
-    "firebase": "^9.9.0",
     "playwright-core": "^1.23.3",
     "puppeteer-core": "^10.4.0"
   },
   "devDependencies": {
+    "firebase": "^9.9.0",
     "dotenv": "^16.0.1",
     "@playwright/test": "^1.23.3",
     "playwright": "^1.23.3",
-    "puppeteer": "^15.4.0",
-    "@netlify/esbuild": "^0.14.25"
+    "puppeteer": "^15.4.0"
   }
 }
