@@ -5,7 +5,7 @@
   "main": "site/index.html",
   "scripts": {
     "start": "",
-    "build": "npx install playwright chromium",
+    "build": "npx playwright install chromium",
     "docs": "md-magic --path '**/*.md' --ignore 'node_modules'"
   },
   "repository": {
