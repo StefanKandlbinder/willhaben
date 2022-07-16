@@ -10,6 +10,6 @@
     "license": "ISC",
     "dependencies": {
         "playwright": "^1.23.3",
-        "firebase": "^9.9.0"
+        "@firebase": "^9.9.0"
     }
 }
