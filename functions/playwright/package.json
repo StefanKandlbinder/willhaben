@@ -1,0 +1,15 @@
+{
+    "name": "functions",
+    "version": "1.0.0",
+    "description": "Headless chrome in function",
+    "main": "function-one.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "playwright": "^1.23.3",
+        "firebase": "^9.9.0"
+    }
+}

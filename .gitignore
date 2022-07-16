@@ -106,6 +106,7 @@ dist
 
 # Local Netlify folder
 .netlify
+functions-build
 
 #environment
 .env
