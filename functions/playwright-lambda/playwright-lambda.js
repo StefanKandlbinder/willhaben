@@ -95,7 +95,7 @@ exports.handler = async (event, context) => {
   try {
     browser = await playwright.chromium.launch({
         args: chromium.args,
-        executablePath: await chromium.executablePath,
+        executablePath: process.env.EXCECUTABLE_PATH || await chromium.executablePath,
         headless: chromium.headless,
       });
 
