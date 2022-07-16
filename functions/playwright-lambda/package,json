@@ -10,7 +10,6 @@
     "license": "ISC",
     "dependencies": {
         "playwright-core": "^1.23.3",
-        "chrome-aws-lambda": "^10.1.0",
-        "@firebase": "^9.9.0"
+        "chrome-aws-lambda": "^10.1.0"
     }
 }
