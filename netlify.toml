@@ -1,7 +1,7 @@
 [build]
   publish = "site"
   command = "npm run build"
-  functions = "functions/playwright"
+  functions = "functions/puppeteer"
 
 [functions]
   external_node_modules = ["chrome-aws-lambda", "playwright-core", "puppeteer-core"]
